@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "activity-plan-builder": {
+      "command": "python",
+      "args": [
+        "C:\\Users\\Administrator\\.trae-cn\\skills\\activity-plan-builder\\mcp\\server.py"
+      ]
+    }
+  }
+}

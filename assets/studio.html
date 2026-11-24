@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>活动方案工坊 · Activity Plan Builder</title>
+  <link rel="stylesheet" href="/studio.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="seal">案</span>
+        <div class="brand-text">
+          <h1>活动方案工坊</h1>
+          <p>Activity Plan Builder</p>
+        </div>
+      </div>
+      <div class="topbar-meta">
+        <span id="planPath" class="plan-path">正在载入…</span>
+        <span id="saveState" class="save-state">已载入</span>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn ghost" data-action="toggle-preview">A4 预览</button>
+        <button class="btn primary" data-action="handoff">交给 Agent</button>
+      </div>
+    </header>
+
+    <div class="layout" id="layout">
+      <aside class="sidebar">
+        <nav id="steps" class="steps"></nav>
+        <div class="sidebar-note">
+          <strong>使用顺序</strong>
+          <p>先勾选模块，再导入学校格式、挑表格样式，最后补内容并交给 Agent。</p>
+        </div>
+        <div class="sidebar-foot">
+          <span id="moduleCount">0 个模块</span>
+          <span class="dot"></span>
+          <span id="pageEstimate">约 0 页</span>
+        </div>
+      </aside>
+
+      <main id="main" class="main"></main>
+
+      <aside id="previewPanel" class="preview-panel">
+        <div class="preview-head">
+          <div>
+            <strong>A4 实时预览</strong>
+            <span>分页以 Word 为准</span>
+          </div>
+          <div class="zoom-controls">
+            <button class="icon-btn" data-action="zoom-out" title="缩小">−</button>
+            <span id="zoomLabel">85%</span>
+            <button class="icon-btn" data-action="zoom-in" title="放大">+</button>
+          </div>
+        </div>
+        <div class="preview-stage">
+          <div id="paper" class="paper"></div>
+        </div>
+      </aside>
+    </div>
+
+    <div id="toast" class="toast" hidden></div>
+    <div id="modal" class="modal" hidden>
+      <div class="modal-card">
+        <h3 id="modalTitle">提示</h3>
+        <p id="modalBody"></p>
+        <div class="modal-actions">
+          <button class="btn ghost" data-action="close-modal">关闭</button>
+          <a id="modalLink" class="btn primary" href="#" download hidden>下载 DOCX</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/studio.js"></script>
+</body>
+</html>

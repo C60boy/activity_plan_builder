@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0",
+  "default": "campus-sample",
+  "presets": [
+    {
+      "id": "campus-sample",
+      "name": "高校通用（样例风格）",
+      "description": "按 EG 中元旦晚会、音乐节等方案还原：方正小标宋标题、黑体一级标题、仿宋正文",
+      "page": {
+        "size": "A4",
+        "marginsCm": { "top": 2.54, "bottom": 2.54, "left": 3.17, "right": 3.17 }
+      },
+      "title": {
+        "eastAsia": "方正小标宋简体",
+        "ascii": "Times New Roman",
+        "sizePt": 22,
+        "bold": false,
+        "align": "center",
+        "lineSpacing": { "mode": "multiple", "value": 1.25 },
+        "spaceBeforePt": 0,
+        "spaceAfterPt": 12
+      },
+      "h1": {
+        "eastAsia": "黑体",
+        "ascii": "Times New Roman",
+        "sizePt": 16,
+        "bold": false,
+        "align": "left",
+        "lineSpacing": { "mode": "exact", "pt": 28 },
+        "spaceBeforePt": 13,
+        "spaceAfterPt": 6
+      },
+      "h2": {
+        "eastAsia": "楷体_GB2312",
+        "ascii": "Times New Roman",
+        "sizePt": 16,
+        "bold": true,
+        "align": "left",
+        "lineSpacing": { "mode": "exact", "pt": 28 },
+        "spaceBeforePt": 6,
+        "spaceAfterPt": 3
+      },
+      "body": {
+        "eastAsia": "仿宋_GB2312",
+        "ascii": "Times New Roman",
+        "sizePt": 16,
+        "bold": false,
+        "align": "justify",
+        "lineSpacing": { "mode": "exact", "pt": 28 },
+        "firstLineIndentChars": 2,
+        "spaceBeforePt": 0,
+        "spaceAfterPt": 0
+      },
+      "table": {
+        "fontEastAsia": "仿宋_GB2312",
+        "headerEastAsia": "黑体",
+        "fontSizePt": 12,
+        "headerSizePt": 12,
+        "lineSpacingPt": 20,
+        "cellPaddingCm": [0.10, 0.15]
+      },
+      "footer": {
+        "enabled": true,
+        "eastAsia": "宋体",
+        "sizePt": 14,
+        "format": "— {page} —"
+      }
+    },
+    {
+      "id": "gov-standard",
+      "name": "国标公文",
+      "description": "参照 GB/T 9704-2012 版式：上 3.7、下 3.5、左 2.8、右 2.6 厘米，正文三号仿宋、行距 28 磅",
+      "page": {
+        "size": "A4",
+        "marginsCm": { "top": 3.7, "bottom": 3.5, "left": 2.8, "right": 2.6 }
+      },
+      "title": {
+        "eastAsia": "方正小标宋简体",
+        "ascii": "Times New Roman",
+        "sizePt": 22,
+        "bold": false,
+        "align": "center",
+        "lineSpacing": { "mode": "exact", "pt": 30 },
+        "spaceBeforePt": 0,
+        "spaceAfterPt": 18
+      },
+      "h1": {
+        "eastAsia": "黑体",
+        "ascii": "Times New Roman",
+        "sizePt": 16,
+        "bold": false,
+        "align": "justify",
+        "lineSpacing": { "mode": "exact", "pt": 28 },
+        "spaceBeforePt": 0,
+        "spaceAfterPt": 0
+      },
+      "h2": {
+        "eastAsia": "楷体_GB2312",
+        "ascii": "Times New Roman",
+        "sizePt": 16,
+        "bold": false,
+        "align": "justify",
+        "lineSpacing": { "mode": "exact", "pt": 28 },
+        "spaceBeforePt": 0,
+        "spaceAfterPt": 0
+      },
+      "body": {
+        "eastAsia": "仿宋_GB2312",
+        "ascii": "Times New Roman",
+        "sizePt": 16,
+        "bold": false,
+        "align": "justify",
+        "lineSpacing": { "mode": "exact", "pt": 28 },
+        "firstLineIndentChars": 2,
+        "spaceBeforePt": 0,
+        "spaceAfterPt": 0
+      },
+      "table": {
+        "fontEastAsia": "仿宋_GB2312",
+        "headerEastAsia": "黑体",
+        "fontSizePt": 12,
+        "headerSizePt": 12,
+        "lineSpacingPt": 20,
+        "cellPaddingCm": [0.10, 0.15]
+      },
+      "footer": {
+        "enabled": true,
+        "eastAsia": "宋体",
+        "sizePt": 14,
+        "format": "— {page} —"
+      }
+    },
+    {
+      "id": "compact",
+      "name": "紧凑长文",
+      "description": "适合页数较多、内容密集的方案：四号正文、1.5 倍行距、页边距收窄",
+      "page": {
+        "size": "A4",
+        "marginsCm": { "top": 2.2, "bottom": 2.2, "left": 2.5, "right": 2.5 }
+      },
+      "title": {
+        "eastAsia": "方正小标宋简体",
+        "ascii": "Times New Roman",
+        "sizePt": 21,
+        "bold": false,
+        "align": "center",
+        "lineSpacing": { "mode": "multiple", "value": 1.2 },
+        "spaceBeforePt": 0,
+        "spaceAfterPt": 10
+      },
+      "h1": {
+        "eastAsia": "黑体",
+        "ascii": "Times New Roman",
+        "sizePt": 15,
+        "bold": false,
+        "align": "left",
+        "lineSpacing": { "mode": "multiple", "value": 1.5 },
+        "spaceBeforePt": 10,
+        "spaceAfterPt": 4
+      },
+      "h2": {
+        "eastAsia": "楷体_GB2312",
+        "ascii": "Times New Roman",
+        "sizePt": 14,
+        "bold": true,
+        "align": "left",
+        "lineSpacing": { "mode": "multiple", "value": 1.5 },
+        "spaceBeforePt": 4,
+        "spaceAfterPt": 2
+      },
+      "body": {
+        "eastAsia": "仿宋_GB2312",
+        "ascii": "Times New Roman",
+        "sizePt": 14,
+        "bold": false,
+        "align": "justify",
+        "lineSpacing": { "mode": "multiple", "value": 1.5 },
+        "firstLineIndentChars": 2,
+        "spaceBeforePt": 0,
+        "spaceAfterPt": 0
+      },
+      "table": {
+        "fontEastAsia": "仿宋_GB2312",
+        "headerEastAsia": "黑体",
+        "fontSizePt": 10.5,
+        "headerSizePt": 10.5,
+        "lineSpacingPt": 16,
+        "cellPaddingCm": [0.08, 0.12]
+      },
+      "footer": {
+        "enabled": true,
+        "eastAsia": "宋体",
+        "sizePt": 12,
+        "format": "— {page} —"
+      }
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "status": "example",
+    "createdAt": "2026-11-21T23:46:57",
+    "updatedAt": "2026-11-21T23:46:57",
+    "generator": "activity-plan-builder"
+  },
+  "event": {
+    "title": "联合研究生院元旦晚会",
+    "theme": "元启新章·农耀青春",
+    "type": "晚会",
+    "date": "2026-12-28",
+    "dateText": "2026年12月28日",
+    "weekday": "星期一",
+    "time": "19:00—21:30",
+    "location": "文化路校区大礼堂",
+    "audience": "联合研究生院全体研究生，预计 500 人",
+    "organizer": "联合研究生院",
+    "undertaker": "联合研究生院学生会",
+    "coOrganizer": "",
+    "scale": "",
+    "contact": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "brief": "面向全院研究生的元旦联欢活动，以节目展演、互动抽奖和新年寄语为主线，营造温暖向上的新年氛围。",
+    "titleLines": []
+  },
+  "style": {
+    "id": "campus-sample",
+    "name": "高校通用（样例风格）",
+    "description": "按 EG 中元旦晚会、音乐节等方案还原：方正小标宋标题、黑体一级标题、仿宋正文",
+    "page": {
+      "size": "A4",
+      "marginsCm": {
+        "top": 2.54,
+        "bottom": 2.54,
+        "left": 3.17,
+        "right": 3.17
+      }
+    },
+    "title": {
+      "eastAsia": "方正小标宋简体",
+      "ascii": "Times New Roman",
+      "sizePt": 22,
+      "bold": false,
+      "align": "center",
+      "lineSpacing": {
+        "mode": "multiple",
+        "value": 1.25
+      },
+      "spaceBeforePt": 0,
+      "spaceAfterPt": 12
+    },
+    "h1": {
+      "eastAsia": "黑体",
+      "ascii": "Times New Roman",
+      "sizePt": 16,
+      "bold": false,
+      "align": "left",
+      "lineSpacing": {
+        "mode": "exact",
+        "pt": 28
+      },
+      "spaceBeforePt": 13,
+      "spaceAfterPt": 6
+    },
+    "h2": {
+      "eastAsia": "楷体_GB2312",
+      "ascii": "Times New Roman",
+      "sizePt": 16,
+      "bold": true,
+      "align": "left",
+      "lineSpacing": {
+        "mode": "exact",
+        "pt": 28
+      },
+      "spaceBeforePt": 6,
+      "spaceAfterPt": 3
+    },
+    "body": {
+      "eastAsia": "仿宋_GB2312",
+      "ascii": "Times New Roman",
+      "sizePt": 16,
+      "bold": false,
+      "align": "justify",
+      "lineSpacing": {
+        "mode": "exact",
+        "pt": 28
+      },
+      "firstLineIndentChars": 2,
+      "spaceBeforePt": 0,
+      "spaceAfterPt": 0
+    },
+    "table": {
+      "fontEastAsia": "仿宋_GB2312",
+      "headerEastAsia": "黑体",
+      "fontSizePt": 12,
+      "headerSizePt": 12,
+      "lineSpacingPt": 20,
+      "cellPaddingCm": [
+        0.1,
+        0.15
+      ]
+    },
+    "footer": {
+      "enabled": true,
+      "eastAsia": "宋体",
+      "sizePt": 14,
+      "format": "— {page} —"
+    }
+  },
+  "styleRef": "campus-sample",
+  "tableStyles": {
+    "global": "three-line",
+    "byKind": {
+      "schedule": "",
+      "budget": "budget",
+      "division": "",
+      "materials": "",
+      "promotion": "",
+      "timeline": "timeline",
+      "risk": "",
+      "awards": "",
+      "form": "form",
+      "program": ""
+    },
+    "enabled": true
+  },
+  "modules": [
+    {
+      "id": "theme",
+      "title": "活动主题",
+      "enabled": true,
+      "order": 1,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "元启新章·农耀青春"
+        }
+      ],
+      "needsAgent": false,
+      "note": ""
+    },
+    {
+      "id": "time_place",
+      "title": "活动时间与地点",
+      "enabled": true,
+      "order": 2,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "时间：2026年12月28日（星期一）19:00—21:30"
+        },
+        {
+          "type": "paragraph",
+          "text": "地点：文化路校区大礼堂"
+        }
+      ],
+      "needsAgent": false,
+      "note": ""
+    },
+    {
+      "id": "audience",
+      "title": "活动对象",
+      "enabled": true,
+      "order": 3,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "联合研究生院全体研究生，预计 500 人。"
+        }
+      ],
+      "needsAgent": false,
+      "note": ""
+    },
+    {
+      "id": "organization",
+      "title": "组织单位",
+      "enabled": true,
+      "order": 4,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "主办单位：联合研究生院"
+        },
+        {
+          "type": "paragraph",
+          "text": "承办单位：联合研究生院学生会"
+        }
+      ],
+      "needsAgent": false,
+      "note": ""
+    },
+    {
+      "id": "content",
+      "title": "活动内容与形式",
+      "enabled": true,
+      "order": 5,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "晚会采取“节目展演 + 互动抽奖 + 新年寄语”相结合的形式，总时长约 150 分钟。"
+        },
+        {
+          "type": "subheading",
+          "text": "（一）节目展演"
+        },
+        {
+          "type": "paragraph",
+          "text": "由各班级、社团推荐节目，涵盖歌唱、舞蹈、器乐、语言类等，经彩排筛选后确定最终节目单。"
+        },
+        {
+          "type": "subheading",
+          "text": "（二）互动环节"
+        },
+        {
+          "type": "paragraph",
+          "text": "设置抽奖、知识问答与现场互动游戏，提升观众参与度。"
+        },
+        {
+          "type": "subheading",
+          "text": "（三）新年寄语"
+        },
+        {
+          "type": "paragraph",
+          "text": "邀请学院老师与研究生代表送上新年祝福，共同回顾一年成长、展望新年目标。"
+        }
+      ],
+      "needsAgent": false,
+      "note": ""
+    },
+    {
+      "id": "registration",
+      "title": "报名要求",
+      "enabled": true,
+      "order": 6,
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "以班级为单位统一报名，节目报名截止时间为 12 月 10 日。",
+            "节目形式不限，单个节目时长原则上不超过 6 分钟。",
+            "报名后需参加统一彩排，具体时间另行通知。",
+            "观众凭报名信息入场，额满即止。"
+          ]
+        }
+      ],
+      "needsAgent": false,
+      "note": ""
+    },
+    {
+      "id": "budget",
+      "title": "经费预算",
+      "enabled": true,
+      "order": 7,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "本次活动经费预算如下，实际支出按学校财务规定据实报销。"
+        }
+      ],
+      "needsAgent": false,
+      "note": "",
+      "table": {
+        "kind": "budget",
+        "title": "预算方案",
+        "headers": [
+          "序号",
+          "物品/项目",
+          "单价（元）",
+          "数量",
+          "小计（元）",
+          "备注"
+        ],
+        "widthsCm": [
+          1.1,
+          4.4,
+          2.3,
+          1.8,
+          2.3,
+          3.0
+        ],
+        "rows": [
+          [
+            "1",
+            "舞台背景板",
+            "800",
+            "1",
+            "800.00",
+            "含设计与安装"
+          ],
+          [
+            "2",
+            "灯光音响租赁",
+            "1200",
+            "1",
+            "1200.00",
+            "含技术人员"
+          ],
+          [
+            "3",
+            "节目道具与服装",
+            "600",
+            "1",
+            "600.00",
+            "按节目实际需求"
+          ],
+          [
+            "4",
+            "互动奖品",
+            "30",
+            "20",
+            "600.00",
+            "三等奖及参与奖"
+          ],
+          [
+            "5",
+            "饮用水与工作餐",
+            "8",
+            "60",
+            "480.00",
+            "演职人员与志愿者"
+          ],
+          [
+            "6",
+            "宣传物料",
+            "400",
+            "1",
+            "400.00",
+            "海报、节目单、横幅"
+          ]
+        ],
+        "total": true,
+        "totalLabel": "总计",
+        "numericColumns": [
+          2,
+          3,
+          4
+        ],
+        "totalAmount": 4080.0
+      }
+    },
+    {
+      "id": "signature",
+      "title": "落款",
+      "enabled": true,
+      "order": 8,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "联合研究生院学生会"
+        },
+        {
+          "type": "paragraph",
+          "text": "2026年12月"
+        }
+      ],
+      "needsAgent": false,
+      "note": ""
+    }
+  ],
+  "attachments": []
+}

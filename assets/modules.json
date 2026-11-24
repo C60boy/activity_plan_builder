@@ -1,0 +1,1189 @@
+{
+  "schemaVersion": "1.0",
+  "categories": [
+    {
+      "id": "core",
+      "name": "核心模块",
+      "description": "方案骨架，默认启用且不可关闭",
+      "locked": true
+    },
+    {
+      "id": "recommended",
+      "name": "推荐模块",
+      "description": "大型校园活动常用，建议按需勾选",
+      "locked": false
+    },
+    {
+      "id": "advanced",
+      "name": "进阶模块",
+      "description": "面向审批、执行与复盘的加分项",
+      "locked": false
+    }
+  ],
+  "modules": [
+    {
+      "id": "theme",
+      "title": "活动主题",
+      "category": "core",
+      "kind": "text",
+      "defaultEnabled": true,
+      "weight": 1,
+      "description": "用一句有记忆点的主题句统领全文",
+      "badge": "",
+      "contentModel": [
+        "paragraph"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：活动主题，建议 8—14 字，可用“主标题·副标题”结构】"
+        }
+      ],
+      "agentHint": "主题要贴合活动类型与学校特色，避免空泛口号；可给出 1 个主标题和不超过 1 个副标题。"
+    },
+    {
+      "id": "time_place",
+      "title": "活动时间与地点",
+      "category": "core",
+      "kind": "text",
+      "defaultEnabled": true,
+      "weight": 1,
+      "description": "明确日期、时段、校区与具体场地",
+      "badge": "",
+      "contentModel": [
+        "paragraph"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "时间：【待补充：2026年X月X日（星期X）19:00—21:30】"
+        },
+        {
+          "type": "paragraph",
+          "text": "地点：【待补充：XX校区XX楼XX厅及门前广场】"
+        }
+      ],
+      "agentHint": "时间写到具体时段；地点写到校区、楼宇、场地三级，户外活动补充备用场地。"
+    },
+    {
+      "id": "audience",
+      "title": "活动对象",
+      "category": "core",
+      "kind": "text",
+      "defaultEnabled": true,
+      "weight": 1,
+      "description": "界定参与学生、教师或院系范围",
+      "badge": "",
+      "contentModel": [
+        "paragraph"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：XX学院全体本科生、研究生，预计参与人数约 XXX 人】"
+        }
+      ],
+      "agentHint": "与活动规模、场地容量保持一致，给出预计人数区间。"
+    },
+    {
+      "id": "organization",
+      "title": "组织单位",
+      "category": "recommended",
+      "kind": "text",
+      "defaultEnabled": true,
+      "weight": 1,
+      "description": "主办、承办、协办单位与支持部门",
+      "badge": "",
+      "contentModel": [
+        "paragraph"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "主办单位：【待补充】"
+        },
+        {
+          "type": "paragraph",
+          "text": "承办单位：【待补充】"
+        },
+        {
+          "type": "paragraph",
+          "text": "协办单位：【待补充，可不填】"
+        }
+      ],
+      "agentHint": "主办单位一般为学院或团委，承办单位为学生会/研究生会，协办单位可为社团或赞助方。"
+    },
+    {
+      "id": "content",
+      "title": "活动内容与形式",
+      "category": "core",
+      "kind": "text",
+      "defaultEnabled": true,
+      "weight": 3,
+      "description": "活动主体内容、板块划分与参与方式",
+      "badge": "",
+      "contentModel": [
+        "paragraph",
+        "subheading",
+        "list"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：概述活动整体形式，例如“节目展演＋互动体验”双线并行，分几个板块、各板块时长】"
+        },
+        {
+          "type": "subheading",
+          "text": "（一）【板块一名称】"
+        },
+        {
+          "type": "paragraph",
+          "text": "【待补充：该板块的具体内容、规则、参与方式与预计时长】"
+        },
+        {
+          "type": "subheading",
+          "text": "（二）【板块二名称】"
+        },
+        {
+          "type": "paragraph",
+          "text": "【待补充：该板块的具体内容、规则、参与方式与预计时长】"
+        }
+      ],
+      "agentHint": "按“板块—玩法—规则—时长”展开；活动类写清参与门槛、分组方式和互动机制。"
+    },
+    {
+      "id": "registration",
+      "title": "报名要求",
+      "category": "recommended",
+      "kind": "text",
+      "defaultEnabled": true,
+      "weight": 1,
+      "description": "报名条件、材料、截止时间与提交方式",
+      "badge": "",
+      "contentModel": [
+        "list",
+        "paragraph"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "【待补充：报名对象与组队要求，个人/团队人数上限】",
+            "【待补充：需提交的材料，如报名表、伴奏、作品说明】",
+            "【待补充：文件命名规则与提交邮箱/问卷链接】",
+            "【待补充：报名截止时间，精确到日与时点】"
+          ]
+        }
+      ],
+      "agentHint": "把“谁能报、报什么、怎么报、什么时候截止”四件事写全；邮箱与链接用占位符，不编造。"
+    },
+    {
+      "id": "budget",
+      "title": "经费预算",
+      "category": "recommended",
+      "kind": "table",
+      "defaultEnabled": true,
+      "weight": 2,
+      "description": "分项预算、小计与总计，可直接核对",
+      "badge": "表格",
+      "tableKind": "budget",
+      "contentModel": [
+        "paragraph",
+        "table"
+      ],
+      "defaultTable": {
+        "kind": "budget",
+        "title": "预算方案",
+        "headers": [
+          "序号",
+          "物品/项目",
+          "单价（元）",
+          "数量",
+          "小计（元）",
+          "备注"
+        ],
+        "widthsCm": [
+          1.1,
+          4.4,
+          2.3,
+          1.8,
+          2.3,
+          3.0
+        ],
+        "rows": [
+          [
+            "1",
+            "【音响租赁】",
+            "【300.00】",
+            "【1】",
+            "【300.00】",
+            "【含调试】"
+          ],
+          [
+            "2",
+            "【宣传物料】",
+            "【5.00】",
+            "【200】",
+            "【1000.00】",
+            "【海报、展板】"
+          ],
+          [
+            "3",
+            "【互动奖品】",
+            "【20.00】",
+            "【30】",
+            "【600.00】",
+            ""
+          ]
+        ],
+        "total": true,
+        "totalLabel": "总计",
+        "numericColumns": [
+          2,
+          3,
+          4
+        ]
+      },
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：预算总额控制在【金额】元以内，实际支出以财务报销凭证为准。】"
+        }
+      ],
+      "agentHint": "小计=单价×数量并自动汇总；金额保留两位小数；总预算与奖品、物资数量互相校验。"
+    },
+    {
+      "id": "signature",
+      "title": "落款",
+      "category": "recommended",
+      "kind": "signature",
+      "defaultEnabled": true,
+      "weight": 1,
+      "description": "发文单位与成文日期，右对齐",
+      "badge": "",
+      "contentModel": [
+        "paragraph"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：发文单位】"
+        },
+        {
+          "type": "paragraph",
+          "text": "【待补充：2026年X月】"
+        }
+      ],
+      "agentHint": "落款单位与主办/承办单位保持一致，日期写到年月即可。"
+    },
+    {
+      "id": "schedule",
+      "title": "活动流程安排",
+      "category": "recommended",
+      "kind": "table",
+      "defaultEnabled": false,
+      "weight": 2,
+      "description": "按时间推进的现场流程表",
+      "badge": "表格",
+      "tableKind": "schedule",
+      "contentModel": [
+        "paragraph",
+        "table"
+      ],
+      "defaultTable": {
+        "kind": "schedule",
+        "title": null,
+        "headers": [
+          "时间",
+          "环节",
+          "具体内容",
+          "负责部门"
+        ],
+        "widthsCm": [
+          2.6,
+          3.2,
+          6.8,
+          3.0
+        ],
+        "rows": [
+          [
+            "【17:30—18:30】",
+            "场地布置",
+            "【舞台搭建、音响调试、物料摆放】",
+            "【文体部】"
+          ],
+          [
+            "【18:30—19:00】",
+            "观众入场",
+            "【签到、引导入座、播放暖场音乐】",
+            "【办公室】"
+          ],
+          [
+            "【19:00—19:10】",
+            "开场环节",
+            "【主持人开场、介绍嘉宾】",
+            "【主持人】"
+          ],
+          [
+            "【19:10—20:40】",
+            "主体活动",
+            "【节目展演与互动环节】",
+            "【文体部】"
+          ],
+          [
+            "【20:40—21:00】",
+            "收尾环节",
+            "【合影、抽奖、有序离场】",
+            "【全体工作人员】"
+          ]
+        ]
+      },
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：现场流程按下表执行，可根据联排结果微调。】"
+        }
+      ],
+      "agentHint": "时间连续、无空档；每个环节都要有负责部门；户外活动预留 15—20 分钟缓冲。"
+    },
+    {
+      "id": "requirements",
+      "title": "工作要求",
+      "category": "recommended",
+      "kind": "text",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "对各部门、工作人员和参与者的总体要求",
+      "badge": "",
+      "contentModel": [
+        "list"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "【待补充：各部门高度重视，明确责任人，按时间节点推进筹备】",
+            "【待补充：工作人员按时到岗，统一佩戴工作证，服从现场调度】",
+            "【待补充：参与人员遵守现场秩序，爱护场地设施，做到人走场净】"
+          ]
+        }
+      ],
+      "agentHint": "写 3—5 条，覆盖组织、执行、纪律、宣传、安全。"
+    },
+    {
+      "id": "background",
+      "title": "活动背景",
+      "category": "recommended",
+      "kind": "text",
+      "defaultEnabled": false,
+      "weight": 2,
+      "description": "交代活动缘起、政策依据与现实需求",
+      "badge": "",
+      "contentModel": [
+        "paragraph"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：结合重要时间节点、学校育人理念、学生问卷或现实需求，说明为什么在此时举办本次活动。】"
+        },
+        {
+          "type": "paragraph",
+          "text": "【待补充：如有前期调研数据、往届活动基础或政策文件依据，可在此补充。】"
+        }
+      ],
+      "agentHint": "2—3 段，先写大背景，再落到学校与学生需求；可引用真实调研数据，但不编造具体文件号。"
+    },
+    {
+      "id": "significance",
+      "title": "活动意义",
+      "category": "recommended",
+      "kind": "text",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "提炼活动在育人、文化与品牌层面的价值",
+      "badge": "",
+      "contentModel": [
+        "paragraph"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：从思想引领、文化育人、实践锻炼、校园品牌四个角度中选择 2—3 个展开，避免与“活动背景”重复。】"
+        }
+      ],
+      "agentHint": "意义写“影响与价值”，聚焦育人成效与品牌沉淀，避免与“活动背景”同义反复。"
+    },
+    {
+      "id": "promotion",
+      "title": "宣传方案",
+      "category": "recommended",
+      "kind": "table",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "宣传渠道、内容节奏与责任人",
+      "badge": "表格",
+      "tableKind": "promotion",
+      "contentModel": [
+        "paragraph",
+        "table"
+      ],
+      "defaultTable": {
+        "kind": "promotion",
+        "headers": [
+          "阶段",
+          "渠道",
+          "宣传内容",
+          "时间",
+          "负责人"
+        ],
+        "widthsCm": [
+          2.2,
+          3.0,
+          5.6,
+          2.6,
+          2.2
+        ],
+        "rows": [
+          [
+            "预热期",
+            "微信公众号、班级群",
+            "【活动预告、主题海报】",
+            "【活动前 7 天】",
+            "【宣传部】"
+          ],
+          [
+            "报名期",
+            "推文、线下摆点",
+            "【报名方式、节目征集】",
+            "【活动前 5 天】",
+            "【宣传部、文体部】"
+          ],
+          [
+            "临近期",
+            "短视频、朋友圈",
+            "【倒计时、看点剧透】",
+            "【活动前 2 天】",
+            "【新媒体组】"
+          ],
+          [
+            "活动后",
+            "公众号、校园媒体",
+            "【活动回顾、精彩瞬间】",
+            "【活动后 3 天内】",
+            "【宣传部】"
+          ]
+        ]
+      },
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：宣传围绕“预热—报名—临近—回顾”四阶段推进，形成完整传播链路。】"
+        }
+      ],
+      "agentHint": "渠道要具体到公众号、班级群、短视频、摆点等；时间用相对天数或明确日期。"
+    },
+    {
+      "id": "selection",
+      "title": "节目与作品征集",
+      "category": "recommended",
+      "kind": "text",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "节目征集、审核、彩排与淘汰机制",
+      "badge": "",
+      "contentModel": [
+        "paragraph",
+        "list"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：说明节目/作品征集范围、形式与数量要求。】"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "【初审：按内容、时长、舞台适配度进行筛选】",
+            "【复审：现场试演，确定最终名单】",
+            "【彩排：按正式流程联排，明确灯光、音响、上下场】"
+          ]
+        }
+      ],
+      "agentHint": "明确审核标准与时间节点；避免出现“视情况而定”这类不可执行表述。"
+    },
+    {
+      "id": "awards",
+      "title": "奖项设置",
+      "category": "recommended",
+      "kind": "table",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "奖项等级、数量与奖品",
+      "badge": "表格",
+      "tableKind": "awards",
+      "contentModel": [
+        "paragraph",
+        "table"
+      ],
+      "defaultTable": {
+        "kind": "awards",
+        "headers": [
+          "奖项",
+          "数量",
+          "奖品",
+          "备注"
+        ],
+        "widthsCm": [
+          3.4,
+          2.4,
+          6.6,
+          3.2
+        ],
+        "rows": [
+          [
+            "一等奖",
+            "【1 名】",
+            "【奖品】",
+            "【可空缺】"
+          ],
+          [
+            "二等奖",
+            "【2 名】",
+            "【奖品】",
+            ""
+          ],
+          [
+            "三等奖",
+            "【3 名】",
+            "【奖品】",
+            ""
+          ],
+          [
+            "优秀奖",
+            "【若干】",
+            "【纪念品】",
+            ""
+          ]
+        ]
+      },
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：奖项设置应与预算匹配，明确评选方式与颁奖环节。】"
+        }
+      ],
+      "agentHint": "奖项数量与预算表、流程表一致；如涉及评分，补充评分维度。"
+    },
+    {
+      "id": "division",
+      "title": "人员分工",
+      "category": "recommended",
+      "kind": "table",
+      "defaultEnabled": false,
+      "weight": 2,
+      "description": "按工作组明确负责人、成员与职责",
+      "badge": "表格",
+      "tableKind": "division",
+      "contentModel": [
+        "paragraph",
+        "table"
+      ],
+      "defaultTable": {
+        "kind": "division",
+        "headers": [
+          "工作组",
+          "负责人",
+          "成员",
+          "主要职责"
+        ],
+        "widthsCm": [
+          2.8,
+          2.4,
+          3.4,
+          7.0
+        ],
+        "rows": [
+          [
+            "统筹组",
+            "【姓名】",
+            "【成员】",
+            "【总体协调、进度督办、对外联络】"
+          ],
+          [
+            "节目组",
+            "【姓名】",
+            "【成员】",
+            "【节目征集、审核、彩排、串场】"
+          ],
+          [
+            "宣传组",
+            "【姓名】",
+            "【成员】",
+            "【海报、推文、摄影摄像】"
+          ],
+          [
+            "后勤组",
+            "【姓名】",
+            "【成员】",
+            "【物资、场地、餐饮、交通】"
+          ],
+          [
+            "安全组",
+            "【姓名】",
+            "【成员】",
+            "【秩序维护、应急处置、医疗保障】"
+          ]
+        ]
+      },
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：实行“组长负责制”，各组成员名单于活动前一周确定。】"
+        }
+      ],
+      "agentHint": "组别覆盖统筹、节目、宣传、后勤、安全；每项职责用动词开头，避免空泛。"
+    },
+    {
+      "id": "materials",
+      "title": "物资清单",
+      "category": "recommended",
+      "kind": "table",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "活动所需物资、数量与用途",
+      "badge": "表格",
+      "tableKind": "materials",
+      "contentModel": [
+        "paragraph",
+        "table"
+      ],
+      "defaultTable": {
+        "kind": "materials",
+        "headers": [
+          "序号",
+          "物资名称",
+          "规格",
+          "数量",
+          "用途",
+          "负责人"
+        ],
+        "widthsCm": [
+          1.2,
+          3.8,
+          3.2,
+          2.0,
+          4.2,
+          2.2
+        ],
+        "rows": [
+          [
+            "1",
+            "【音响设备】",
+            "【一整套】",
+            "【1 套】",
+            "【现场扩声】",
+            "【后勤组】"
+          ],
+          [
+            "2",
+            "【主题背景板】",
+            "【6m×3m】",
+            "【1 块】",
+            "【舞台主视觉】",
+            "【宣传组】"
+          ],
+          [
+            "3",
+            "【荧光棒】",
+            "【50cm】",
+            "【500 根】",
+            "【氛围营造】",
+            "【后勤组】"
+          ]
+        ]
+      },
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：物资按“名称—规格—数量—用途—负责人”登记，活动结束后清点回收。】"
+        }
+      ],
+      "agentHint": "数量与预算表、参与人数匹配；注明借用、采购或自有。"
+    },
+    {
+      "id": "safety",
+      "title": "安全预案与应急保障",
+      "category": "recommended",
+      "kind": "text",
+      "defaultEnabled": false,
+      "weight": 3,
+      "description": "人流、消防、医疗、天气与突发事件处置",
+      "badge": "重点",
+      "contentModel": [
+        "paragraph",
+        "subheading",
+        "list"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：坚持“安全第一、预防为主”原则，成立现场安全工作组，明确责任人。】"
+        },
+        {
+          "type": "subheading",
+          "text": "（一）人流与秩序"
+        },
+        {
+          "type": "paragraph",
+          "text": "【待补充：分时段入场、设置单向通道与缓冲区，安排专人引导，防止拥挤踩踏。】"
+        },
+        {
+          "type": "subheading",
+          "text": "（二）消防与用电"
+        },
+        {
+          "type": "paragraph",
+          "text": "【待补充：活动前检查消防通道与用电负荷，禁止私拉电线，配备灭火器材。】"
+        },
+        {
+          "type": "subheading",
+          "text": "（三）医疗与突发事件"
+        },
+        {
+          "type": "paragraph",
+          "text": "【待补充：设置医疗点，明确校医院、保卫处联络方式与送医路线。】"
+        },
+        {
+          "type": "subheading",
+          "text": "（四）天气与备用方案"
+        },
+        {
+          "type": "paragraph",
+          "text": "【待补充：户外活动提前 24 小时研判天气，遇雨雪大风及时启用备用场地或延期。】"
+        }
+      ],
+      "agentHint": "按“风险点—预防措施—责任人—处置流程”写；必须可执行，留下应急电话占位符。"
+    },
+    {
+      "id": "civilized",
+      "title": "文明参与规范",
+      "category": "recommended",
+      "kind": "text",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "观演礼仪、场地爱护与离场秩序",
+      "badge": "",
+      "contentModel": [
+        "list"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "【文明观演，不喧哗、不拥挤、不占座】",
+            "【爱护草坪、舞台与公共设施，不乱丢垃圾】",
+            "【活动结束后按班级有序离场，做到“人走场净”】"
+          ]
+        }
+      ],
+      "agentHint": "3—5 条，语气坚定但不生硬；户外活动补充草坪与天气相关提醒。"
+    },
+    {
+      "id": "timeline",
+      "title": "筹备推进表",
+      "category": "advanced",
+      "kind": "table",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "从筹备到收尾的倒排工期表",
+      "badge": "表格",
+      "tableKind": "timeline",
+      "contentModel": [
+        "paragraph",
+        "table"
+      ],
+      "defaultTable": {
+        "kind": "timeline",
+        "headers": [
+          "时间节点",
+          "工作事项",
+          "交付物",
+          "负责人"
+        ],
+        "widthsCm": [
+          2.8,
+          5.4,
+          5.2,
+          2.2
+        ],
+        "rows": [
+          [
+            "【活动前 30 天】",
+            "【确定方案与预算】",
+            "【方案定稿、预算表】",
+            "【统筹组】"
+          ],
+          [
+            "【活动前 21 天】",
+            "【启动宣传与报名】",
+            "【推文、报名表】",
+            "【宣传组】"
+          ],
+          [
+            "【活动前 7 天】",
+            "【节目审核与物资采购】",
+            "【节目单、物资清单】",
+            "【节目组、后勤组】"
+          ],
+          [
+            "【活动前 1 天】",
+            "【联排与场地验收】",
+            "【流程单、点位图】",
+            "【全体】"
+          ],
+          [
+            "【活动后 3 天】",
+            "【总结与报销】",
+            "【总结报告、票据】",
+            "【统筹组】"
+          ]
+        ]
+      },
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：按倒排工期推进，关键节点设置检查人，逾期及时预警。】"
+        }
+      ],
+      "agentHint": "时间节点用“活动前 X 天”或具体日期，交付物必须可验收。"
+    },
+    {
+      "id": "venue",
+      "title": "场地布置方案",
+      "category": "advanced",
+      "kind": "text",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "功能分区、动线、舞台与氛围布置",
+      "badge": "",
+      "contentModel": [
+        "paragraph",
+        "list"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：说明场地整体分区与观众动线，可附平面示意图。】"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "【舞台区：主背景、灯光、音响、道具摆放】",
+            "【观众区：座位分区、通道宽度、应急出口】",
+            "【互动区：签到处、打卡点、补给点】"
+          ]
+        }
+      ],
+      "agentHint": "与安全预案的人流、消防要求一致；写明各区域责任人。"
+    },
+    {
+      "id": "risk",
+      "title": "风险研判与应对",
+      "category": "advanced",
+      "kind": "table",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "逐项列出风险、等级与应对措施",
+      "badge": "表格",
+      "tableKind": "risk",
+      "contentModel": [
+        "paragraph",
+        "table"
+      ],
+      "defaultTable": {
+        "kind": "risk",
+        "headers": [
+          "风险点",
+          "可能性",
+          "影响",
+          "应对措施",
+          "责任人"
+        ],
+        "widthsCm": [
+          4.2,
+          2.0,
+          2.0,
+          5.6,
+          1.8
+        ],
+        "rows": [
+          [
+            "【天气突变】",
+            "【中】",
+            "【高】",
+            "【启用备用场地或延期】",
+            "【统筹组】"
+          ],
+          [
+            "【人员拥挤】",
+            "【中】",
+            "【高】",
+            "【限流、分流、增设引导】",
+            "【安全组】"
+          ],
+          [
+            "【设备故障】",
+            "【低】",
+            "【中】",
+            "【备用话筒、提前联调】",
+            "【后勤组】"
+          ]
+        ]
+      },
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：活动前召开风险研判会，逐项确认应对措施与责任人。】"
+        }
+      ],
+      "agentHint": "风险要具体到本活动，不要罗列通用条目；高影响风险必须有备用方案。"
+    },
+    {
+      "id": "sponsorship",
+      "title": "赞助与经费来源",
+      "category": "advanced",
+      "kind": "text",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "经费构成、赞助权益与使用原则",
+      "badge": "",
+      "contentModel": [
+        "paragraph",
+        "list"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：说明经费来源构成，如学院支持、学生会经费、社会赞助。】"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "【赞助权益：物料露出、主持人口播、公众号致谢】",
+            "【经费使用：专款专用，凭票据报销，接受监督】"
+          ]
+        }
+      ],
+      "agentHint": "涉及赞助时明确权益边界，不承诺无法执行的资源；金额与预算表一致。"
+    },
+    {
+      "id": "attachment",
+      "title": "附件",
+      "category": "advanced",
+      "kind": "attachment",
+      "defaultEnabled": false,
+      "weight": 2,
+      "description": "报名表、节目单、评分表等随文附件",
+      "badge": "表单",
+      "contentModel": [
+        "attachment"
+      ],
+      "defaultAttachments": [
+        {
+          "id": "signup",
+          "title": "活动报名表",
+          "subtitle": "（如人数较多可填写多份）",
+          "table": {
+            "kind": "form",
+            "headers": [],
+            "widthsCm": [
+              4.0,
+              3.6,
+              3.6,
+              4.8
+            ],
+            "rows": [
+              [
+                "姓名",
+                "",
+                "联系方式",
+                ""
+              ],
+              [
+                "班级",
+                "",
+                "学号",
+                ""
+              ],
+              [
+                "报名项目",
+                "",
+                "参演人数",
+                ""
+              ],
+              [
+                "内容简介（200字以内）",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "merges": [
+              {
+                "r": 0,
+                "c": 1,
+                "rowspan": 1,
+                "colspan": 1
+              },
+              {
+                "r": 0,
+                "c": 3,
+                "rowspan": 1,
+                "colspan": 1
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "rowspan": 1,
+                "colspan": 1
+              },
+              {
+                "r": 1,
+                "c": 3,
+                "rowspan": 1,
+                "colspan": 1
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "rowspan": 1,
+                "colspan": 1
+              },
+              {
+                "r": 2,
+                "c": 3,
+                "rowspan": 1,
+                "colspan": 1
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "rowspan": 1,
+                "colspan": 3
+              }
+            ],
+            "rowHeightCm": 1.0
+          }
+        },
+        {
+          "id": "program",
+          "title": "节目单",
+          "subtitle": "",
+          "table": {
+            "kind": "program",
+            "headers": [
+              "序号",
+              "节目名称",
+              "演出形式",
+              "演出单位/人员",
+              "时长"
+            ],
+            "widthsCm": [
+              1.2,
+              4.6,
+              3.0,
+              4.4,
+              2.0
+            ],
+            "rows": [
+              [
+                "1",
+                "【节目名称】",
+                "【歌曲】",
+                "【XX学院】",
+                "【4 分钟】"
+              ],
+              [
+                "2",
+                "【节目名称】",
+                "【舞蹈】",
+                "【XX社团】",
+                "【5 分钟】"
+              ],
+              [
+                "3",
+                "【节目名称】",
+                "【语言类】",
+                "【XX班】",
+                "【6 分钟】"
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "【待补充：附件按“附件一、附件二”顺序编排，正文中标注对应附件。】"
+        }
+      ],
+      "agentHint": "只保留活动真正需要的附件；报名表字段与报名要求一致。"
+    },
+    {
+      "id": "contact",
+      "title": "联系方式",
+      "category": "advanced",
+      "kind": "text",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "活动咨询、报名与应急联系人",
+      "badge": "",
+      "contentModel": [
+        "paragraph"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "paragraph",
+          "text": "活动咨询：【姓名】，联系电话：【待定】；报名邮箱：【待定】。"
+        },
+        {
+          "type": "paragraph",
+          "text": "现场应急：【姓名】，联系电话：【待定】。"
+        }
+      ],
+      "agentHint": "姓名与电话统一使用占位符，不编造；邮箱与报名要求一致。"
+    },
+    {
+      "id": "review",
+      "title": "总结与复盘",
+      "category": "advanced",
+      "kind": "text",
+      "defaultEnabled": false,
+      "weight": 1,
+      "description": "活动后资料归档、总结与改进",
+      "badge": "",
+      "contentModel": [
+        "list"
+      ],
+      "defaultBlocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "【活动结束后 3 个工作日内完成照片、视频与新闻稿归档】",
+            "【召开复盘会，形成问题清单与改进建议】",
+            "【完成经费报销与物资清点】"
+          ]
+        }
+      ],
+      "agentHint": "明确归档内容、责任人与完成时限，便于下一届复用。"
+    }
+  ]
+}
